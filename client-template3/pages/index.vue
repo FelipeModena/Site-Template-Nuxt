@@ -24,7 +24,7 @@
         id="carousel-index-1"
         class="carousel-botao"
         v-model="slide"
-        :interval="0"
+        :interval="3000"
         indicators
         img-width="1024"
         img-height="400"
