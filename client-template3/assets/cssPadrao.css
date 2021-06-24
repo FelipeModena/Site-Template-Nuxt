@@ -121,7 +121,7 @@ a:hover {
 }
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.8s;
+  transition: opacity 0.4s;
 }
 
 .page-enter,
