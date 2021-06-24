@@ -50,9 +50,6 @@ export default {
     };
   },
   methods: {
-    getters() {
-      console.log(this.quemSomos);
-    },
     teste1() {
       return this.teste;
     },

@@ -119,16 +119,13 @@ export default {
   },
   mounted() {
     if (document.documentElement.clientWidth <= 850) {
-      console.log("menor");
     }
 
     addEventListener("resize", () => {
-      console.log(document.documentElement.clientWidth);
       if (document.documentElement.clientWidth <= 850) {
         $("#index-caixa-final-informativa").css("display", "list-item");
         $("#index-caixa-colecoes").removeClass('d-inline-flex').css("display","grid").css("grid-template-columns", "auto auto" ).css("grid-gap", "12px")
       } else {
-        console.log("maior");
         $("#index-caixa-final-informativa").css("display", "grid");
         $("#index-caixa-colecoes").addClass('d-inline-flex')
 

@@ -54,7 +54,6 @@ export default {
     }
 
     addEventListener("resize", () => {
-      console.log(document.documentElement.clientWidth);
       if (document.documentElement.clientWidth <= 850) {
         this.mobile = true;
       } else {

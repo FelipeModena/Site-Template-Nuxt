@@ -125,18 +125,14 @@ export default {
     },
     showModalColecoes(id) {
       this.modalColecoes = { imgs: this.nossasColecoes[id].imgs, id: id };
-      console.log(this.modalColecoes);
+      (this.modalColecoes);
     },
     mudaCorColecao(id) {
       if (id % 2 == 0) {
         return "cor-fundo-primaria";
       } else return "cor-fundo-secundaria";
     },
-    getters() {
-      console.log(this.nossasColecoes);
-    },
     onSlideStart(slide) {
-      console.log(slide);
 
       if (slide=="modal") {
         return;
@@ -144,7 +140,6 @@ export default {
       this.sliding = true;
     },
     onSlideEnd(slide) {
-      console.log(slide);
       if (slide=="modal") {
         return;
       }
@@ -160,7 +155,6 @@ export default {
       if (document.documentElement.clientWidth <= 850) {
         $(".mobile-display-img").css("width", "100%");
         $(".mobile-display").css("display", "list-item");
-        console.log("trocou");
       } else {
         $(".mobile-display-img").css("width", "400px");
         $(".mobile-display").css("display", "flex");
